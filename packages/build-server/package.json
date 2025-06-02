@@ -1,5 +1,5 @@
 {
-  "name": "build-server",
+  "name": "@repo/build-server",
   "module": "index.ts",
   "type": "module",
   "private": true,
