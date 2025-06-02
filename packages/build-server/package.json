@@ -1,0 +1,23 @@
+{
+  "name": "build-server",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "bun build src/index.ts --outdir=dist --target=node",
+    "start": "bun run dist/index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.821.0",
+    "@types/mime-types": "^3.0.0",
+    "dotenv": "^16.5.0",
+    "kafkajs": "^2.2.4",
+    "mime-types": "^3.0.1"
+  }
+}
